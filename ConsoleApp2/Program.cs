@@ -40,7 +40,6 @@
 
             Teacher teach = new Teacher();
             teach.PrintName();
-            teach.TeacherID = 500;
             Console.WriteLine();
         }
     }
