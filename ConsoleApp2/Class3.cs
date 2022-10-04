@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+// länk för GET/SET https://www.w3schools.com/cs/cs_properties.php
+
 namespace ConsoleApp2
 {
     //exempel på hur Arv i Arv fungerar.
@@ -11,11 +14,12 @@ namespace ConsoleApp2
     class Teacher : Student
     {
         // Teacher ID is StudentID but remade to teacher
-        public int TeacherID   // property
-        {
-            get { return TeacherID; }
-            set { TeacherID = value; }
-        }
+        private int TeacherID;
+        //public int TeacherID   // property
+        //{
+        //    get { return TeacherID; }
+        //    set { TeacherID = value; }
+        //}
         //Protected = Kan hittas från Ärvda klasser (Student)
         //Private = hittas och ändras ENDAST i denna klass
         public Teacher()
