@@ -20,8 +20,8 @@
 
             //basiks skapande av Ärvd klass
             Console.WriteLine("ärvda klassens bas värden");
+            //denna behöver ingen information för att skapa objektet
             Student stud = new Student();
-            Console.WriteLine("ärvda klassens bas värden");
 
             Console.WriteLine("FirstName");
             InputValue = Console.ReadLine();
@@ -30,6 +30,8 @@
             Console.WriteLine("Enter ID");
             InputID = int.Parse(Console.ReadLine());
 
+
+            // denna konstruktor Kräver infon för att skapa objectet
             Student stud2 = new Student(InputValue,InputValue2,InputID);
 
             stud2.PrintName();
